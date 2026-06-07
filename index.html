@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>worst ui</title>
+    <style>
+        body {
+            background: #222;
+            color: #e2e2e2;
+            font-family: comic sans ms, arial;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin: 20px 0;
+        }
+
+        #container {
+            margin-top: 40px;
+            padding: 20px;
+            border: 7px dotted hotpink;
+            width: 87%;
+            margin-left: 3%;
+            background: linear-gradient(45deg, #ff0000, #00ffea, #ff00f2);
+            animation: wiggle 0.3s infinite alternate;
+        }
+
+        @keyframes wiggle {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(1deg); }
+        }
+
+        .label {
+            font-size: 1.4rem;
+            margin-left: 17px;
+            display: block;
+            transform: rotate(-2deg);
+        }
+
+        input {
+            width: 60%;
+            padding: 14px;
+            margin: 12px;
+            border: 5px solid yellow;
+            background: #444;
+            color: #ccc;
+            font-size: 1.1rem;
+            outline: none;
+        }
+
+        button {
+            padding: 20px 50px;
+            font-size: 1.4rem;
+            background: lime;
+            border: 6px ridge purple;
+            cursor: pointer;
+            margin-left: 40px;
+            transform: rotate(3deg);
+        }
+
+        button:hover {
+            background: #ff00ff;
+            color: black;
+        }
+
+        #warning {
+            margin-top: 30px;
+            font-size: 1.2rem;
+            color: #ffea00;
+            text-shadow: 2px 2px 0px red;
+            transform: rotate(-1deg);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>PAY UP AND I WILL ADD CONTENT</h1>
+
+    <div id="container">
+        <label class="label">username (delete the text yourself lol)</label>
+        <input type="text" placeholder="enter username here but like manually delete this">
+
+        <label class="label">password (good luck)</label>
+        <input type="password" placeholder="type password but first erase this text">
+
+        <button>login???</button>
+
+        <p id="warning">this ui was designed by someone who hates users</p>
+    </div>
+
+</body>
+</html>
